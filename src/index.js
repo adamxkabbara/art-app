@@ -1,12 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import "uikit/dist/css/uikit.min.css";
-import "uikit/dist/css/uikit-core.min.css";
-import "uikit/dist/js/uikit.min.js";
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App";
+
+import "uikit/dist/css/uikit.css";
+import "uikit/dist/js/uikit.js";
+import "./styles/index.css";
 
 ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
 );
